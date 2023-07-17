@@ -1,0 +1,60 @@
+/*Google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+/*CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --sideBGcolor:hsl(214, 67%, 5%);
+    --themecolor:#00A78E;
+    --iconBGcolor:#2C2F3F;
+    --textcolor:#525252;
+    --bgcolor:#F7F7F7;
+ 
+}
+header{
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color:var(--sideBGcolor);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
